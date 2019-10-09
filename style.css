@@ -1,0 +1,93 @@
+.otros_dialog .otros_seleccionado{
+    background-color: #2014c991;
+}
+
+/*estilos responsivos*/
+.AdminWeb_grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.list-menu-grid{
+    text-align: center;
+    margin: auto;
+    padding: 10%;
+}
+
+/*version mobile se distorciona*/
+.AdminWeb_editando #bigfooter{
+    margin: auto auto auto auto;
+}
+
+@media screen and (min-width: 400px) {
+    .AdminWeb_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .list-menu-grid{
+        text-align: center;
+        margin: auto;
+        padding: 10%;
+    }
+
+    /*version mobile se distorciona*/
+    .AdminWeb_editando #bigfooter{
+        margin: auto auto auto auto;
+    }
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .AdminWeb_grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .list-menu-grid{
+        text-align: center;
+        margin: auto;
+        padding: 10%;
+    }
+
+    /*version mobile se distorciona*/
+    .AdminWeb_editando #bigfooter{
+        margin: auto auto auto auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .AdminWeb_grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .list-menu-grid{
+        text-align: center;
+        margin: auto;
+        padding: 10%;
+    }
+
+    /*version mobile se distorciona*/
+    .AdminWeb_editando #bigfooter{
+        margin: auto auto auto auto;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .AdminWeb_grid{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    
+    .list-menu-grid{
+        text-align: center;
+        margin: auto;
+        padding: 10%;
+    }
+
+    /*version mobile se distorciona*/
+    .AdminWeb_editando #bigfooter{
+        margin: auto auto auto auto;
+    }
+}
