@@ -38,8 +38,8 @@ $(".AdminWeb-contenedor .dd-item-1 .AdminWeb-img_menu").click( function (){
 $("#serialice").click(function(){
     var x = $("form").serializeArray();
 
-    $.each(x, function(){
-        alert(x);
+    $.each(x, function(i, field){
+        alert(field.name+'/'+field.value);
     });
     
 });

@@ -97,6 +97,11 @@
 }
 
 
+/* estilos caja flexible */
+.contenedor{
+    display: flex;
+}
+
 /*estilos nestable*/
 
 
