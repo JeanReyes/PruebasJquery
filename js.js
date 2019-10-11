@@ -64,3 +64,45 @@ $("#agregarprop").click(function(){
     }
 });
 
+$('.AdminWeb-contenedor .AdminWeb_grid .list-menu-grid').click(function(){
+    $(this).parent().parent().parent().parent().parent().parent().find('h1').text('pagina de prueba');
+    
+
+    $('a').addClass("colores");
+    $('button').addClass("colores");
+
+    
+
+});
+
+
+
+//activacion de nestable
+$(document).ready(function()
+{
+
+    var updateOutput = function(e)
+    {
+        var list   = e.length ? e : $(e.target),
+            output = list.data('output');
+        if (window.JSON) {
+            output.val(window.JSON.stringify(list.nestable('serialize')));//, null, 2));
+        } else {
+            output.val('JSON browser support required for this demo.');
+        }
+    };
+
+    // activate Nestable for list 1
+    $('#nestable').nestable({
+        group: 1
+    })
+    .on('change', updateOutput);
+
+    // output initial serialised data
+    updateOutput($('#nestable').data('output', $('#nestable-output')));
+
+
+
+});
+
+

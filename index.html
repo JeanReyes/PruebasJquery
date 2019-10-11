@@ -14,7 +14,7 @@
     
     
     <ul class="rn_menu AdminWeb_menu dd-list">
-
+        <h1 class="titulo"></h1>
         <div class="bg-categories">
             <div class="container py-5">
                 <div class="AdminWeb-contenedor">
@@ -65,11 +65,44 @@
                                 <div class="list-menu-grid">Prueba 1</div>
                                 <div class="list-menu-grid">Prueba 1</div>
                                 <div class="list-menu-grid">Prueba 1</div>
+                                <div class="list-menu-grid">Prueba 1
+                                    <button id="buton-body">cambia</button>
+                                </div>
                                 <div class="list-menu-grid">Prueba 1</div>
                                 <div class="list-menu-grid">Prueba 1</div>
                                 <div class="list-menu-grid">Prueba 1</div>
                                 <div class="list-menu-grid">Prueba 1</div>
-                                <div class="list-menu-grid">Prueba 1</div>
+                            </div>
+
+                            <div class="dd" id="nestable">
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="1">
+                                        <div class="dd-handle">Item 1</div>
+                                    </li>
+                                    <li class="dd-item" data-id="2">
+                                        <div class="dd-handle">Item 2</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="3"><div class="dd-handle">Item 3</div></li>
+                                            <li class="dd-item" data-id="4"><div class="dd-handle">Item 4</div></li>
+                                            <li class="dd-item" data-id="5">
+                                                <div class="dd-handle">Item 5</div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="6"><div class="dd-handle">Item 6</div></li>
+                                                    <li class="dd-item" data-id="7"><div class="dd-handle">Item 7</div></li>
+                                                    <li class="dd-item" data-id="8"><div class="dd-handle">Item 8</div></li>
+                                                </ol>
+                                            </li>
+                                            <li class="dd-item" data-id="9"><div class="dd-handle">Item 9</div></li>
+                                            <li class="dd-item" data-id="10"><div class="dd-handle">Item 10</div></li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="11">
+                                        <div class="dd-handle">Item 11</div>
+                                    </li>
+                                    <li class="dd-item" data-id="12">
+                                        <div class="dd-handle">Item 12</div>
+                                    </li>
+                                </ol>
                             </div>
                         </div>
                     </div>
@@ -101,6 +134,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
      <script src="js.js"></script>
+     <script src="jquery.nestable.js"></script>
 
 </body>
 </html>
